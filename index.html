@@ -108,7 +108,7 @@
         background-image: url("../images/hero-desktop.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        /* background-position: center; */
       }
       .left-side {
         max-width: 70%;
@@ -117,7 +117,7 @@
         text-align: left;
       }
       .hero-desktop {
-        object-fit: cover;
+        object-fit: fill;
         /* max-width: 100%; */
         height: 100%;
       }
@@ -250,6 +250,10 @@
         main {
           padding-left: 7.8rem;
         }
+        .icon-error {
+          width: 2.4rem;
+          right: 3.6rem;
+        }
       }
       @media (max-width: 44em) {
         html {
@@ -299,6 +303,10 @@
         }
         .attribution {
           bottom: -16rem;
+        }
+        .icon-error {
+          width: 2.4rem;
+          right: 9.6rem;
         }
       }
       @media (max-width: 36em) {
