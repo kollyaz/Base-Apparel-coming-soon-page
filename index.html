@@ -274,15 +274,15 @@
       }
       @media (max-width: 44em) {
         html {
-          font-size: 50%;
+          font-size: 62.5%;
         }
         body {
           background-color: hsl(0, 100%, 98%);
           background-image: none;
-          padding-top: 80rem;
+          padding-top: 55rem;
         }
         h1 {
-          font-size: 4.8rem;
+          font-size: 4.2rem;
         }
         main {
           height: auto;
@@ -291,25 +291,27 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          padding: 0 4.8rem 0 4.8rem;
+          padding: 0;
         }
         input {
           width: auto;
         }
+
         h1,
         .email-input,
         .email-input-error {
           align-self: auto;
         }
         .logo {
-          left: 4.8rem;
+          width: 15rem;
+          left: 3.2rem;
         }
         .left-side {
           text-align: center;
           padding: 0;
         }
         .hero-mobile {
-          top: 15rem;
+          top: 12rem;
           display: block;
 
           width: 100%;
@@ -327,41 +329,54 @@
         }
       }
       @media (max-width: 36em) {
-        html {
-          font-size: 52%;
-        }
-        body {
-          padding-top: 60rem;
-        }
-      }
-      @media (max-width: 30em) {
-        html {
-          font-size: 52%;
-        }
         body {
           padding-top: 50rem;
         }
       }
-      @media (max-width: 24em) {
-        html {
-          font-size: 45%;
-        }
+      @media (max-width: 30em) {
         body {
-          padding-top: 55rem;
+          padding-top: 43rem;
+        }
+        /* h1 {
+          font-size: 4.8rem;
+        } */
+      }
+      @media (max-width: 24em) {
+        /* html {
+          font-size: 45%;
+        } */
+        body {
+          padding-top: 38rem;
+        }
+        .logo {
+          width: 14rem;
+        }
+        h1 {
+          font-size: 3.8rem;
+        }
+        .attribution {
+          bottom: -20rem;
         }
       }
       @media (max-width: 21em) {
-        html {
+        /* html {
           font-size: 40%;
-        }
+        } */
         body {
-          padding-top: 55rem;
+          padding-top: 34rem;
         }
         h1 {
           /* font-size: 4rem;/s */
           text-transform: uppercase;
           letter-spacing: 8px;
           color: hsl(0, 6%, 24%);
+        }
+        .logo {
+          width: 13rem;
+          top: 4rem;
+        }
+        .hero-mobile {
+          top: 10rem;
         }
       }
     </style>
@@ -422,8 +437,6 @@
       "use strict";
 
       const btn = document.querySelectorAll("button");
-      console.log(document.querySelectorAll("button"));
-      console.log(document.querySelector(".email-error"));
 
       const success = function () {
         document.querySelector(".provide").classList.add("hidden");
